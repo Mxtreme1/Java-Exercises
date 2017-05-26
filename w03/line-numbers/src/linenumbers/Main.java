@@ -1,0 +1,49 @@
+package linenumbers;
+
+import java.util.Scanner;
+
+public class Main {
+    //Prints the specified number of lines if arguments are passed.
+    //Otherwise all lines given in Stdin are printed.
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int min = 1;//if no arguments is passed the printing starts at line 1
+        int max = Integer.MAX_VALUE;//All lines are printed if no arguments
+        int c = 0;//a counter for the number of lines
+
+        //checks if an argument is passed
+        if (args.length > 0) {
+            //If the first argument is an int it is set as the new value for
+            //min/max otherwise Bad arguments is returned
+            try {
+                min = Integer.parseInt(args[0]); 
+                //Checks if there are two arguments passed
+                if (args.length == 2) {
+                try {
+                    max = Integer.parseInt(args[1]);
+                } catch(Exception e){
+                    System.out.println("Bad arguments.");
+                    System.out.println("Usage: line-numbers [start-number [end-number]]");
+                    return;
+                }
+            }
+            } catch(Exception e){
+                System.out.println("Bad arguments.");
+                System.out.println("Usage: line-numbers [start-number [end-number]]");
+                return;
+            }
+        }
+        //This part is skipped if the input is empty
+        if (scan.hasNext()) {
+            while (scan.hasNextLine()) {
+            c++;
+            String currentline = scan.nextLine();
+            //Prints line if it is between the arguments passed (or all)
+            if (c >= min && c <= max) System.out.println(c + " " + currentline);
+            }
+        }
+        //If input empty the empty String is printed
+        else System.out.println("");
+        scan.close();
+    }
+}

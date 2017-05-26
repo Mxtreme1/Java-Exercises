@@ -1,0 +1,26 @@
+package caesarcipher;
+
+public class Main {
+    //Uses caesar-cipher with a given shift on the input provided
+  public static String encode(String input, int shift) {
+      char[] chars = input.toCharArray();//String is split into an array (1 char/field)
+      StringBuilder stri = new StringBuilder(input.length());
+
+      for (int i = 0; i < chars.length; i++) {
+          int ord = (int)chars[i];//gets the ASCII number of the char
+          //Checks if the char is capital or not
+          if (ord > 64 && ord < 91) {
+                ord += shift;//adds the shift to the ASCII number
+                while (ord > 90) ord -= 26;//While ASCII number too big to convert decrement by 26
+          }
+          //Same as above for non capital chars
+          else if (ord > 96 && ord < 123) {
+              ord += shift;
+              while (ord > 122) ord -= 26;
+          }
+          stri.append((char)ord);//Appends the shifted char to a Stringbuilder
+      }
+      return stri.toString();//Returns the built String
+
+      }                  
+        }
