@@ -1,0 +1,7 @@
+All your codes are outputting correct results.
+
+Keep up the good work.
+
+
+
+Note: Don't add comments on every line.It reduces readability. Comment only unclear functionality, what program does.
