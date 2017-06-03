@@ -5,9 +5,30 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class GeometryTest {
-    @Test
-    public void lineIntersection() throws Exception {
+
+    public boolean checkIntersection(double[] resultPoint, double a1, double b1, double a2, double b2, double deltaX, double deltaY) {
+        //checks if the point calculated by the method actually lies on both lines
+        double intersect_x = resultPoint[0];
+        double intersect_y = resultPoint[1];
+        double x1 = (intersect_y - b1) / a1;
+        double x2 = (intersect_y - b2) / a2;
+        double y1 = a1 * intersect_x + b1;
+        double y2 = a2 * intersect_x + b2;
+        if (Math.abs(x1 - x2) < deltaX && Math.abs(y1 - y2) < deltaY) {
+            //calculates if the distance between the points is smaller than delta
+            return true;
+        }
+        return false;
     }
 
-
+    @Test
+    public void lineIntersection() throws Exception {
+        //Tests for parallel and intersect
+        double a1 = 6;
+        double a2 = 6;
+        double b1 = 9;
+        double b2 = 4;
+        assertTrue(checkIntersection(Geometry.lineIntersection(7, b1, a2, b2), 7, b1, a2, b2, 0.001, 0.001));
+        assertTrue(checkIntersection(Geometry.lineIntersection(a1, b1, a2, b2), a1, b1, a2, b2, 0.001, 0.001));
+    }
 }
