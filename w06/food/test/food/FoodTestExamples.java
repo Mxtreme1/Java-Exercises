@@ -51,6 +51,11 @@ public class FoodTestExamples {
         assertEquals(new Food("Water", 0.0, 0.0, 0.1), new Food("Water", 0.0, 0.0, 0.0));
     }
 
+    @Test (expected = IllegalArgumentException.class)
+    public void testFood3() {
+        assertEquals(3400, new Food("strangething", -0.1, 0.1, 1.0));
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void testIllegalFood() {
         new Food("Burger", 1, 1, 1);

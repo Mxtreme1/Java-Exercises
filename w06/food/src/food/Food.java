@@ -10,7 +10,7 @@ public class Food {
         this.carbs = carbohydrateShare;
         this.fats = fatShare;
         this.protein = proteinShare;
-        if (this.carbs + this.fats + proteinShare > 1) {
+        if (this.carbs + this.fats + proteinShare > 1 || this.carbs < 0 || this.fats < 0 || this.protein < 0) {
            throw new IllegalArgumentException(); 
         }
     }
