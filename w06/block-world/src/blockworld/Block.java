@@ -2,11 +2,15 @@ package blockworld;
 
 
 public class Block {
+    /**
+     * Blocks are the inhabitants of Blockworlds and start at coordinates possess a velocity and shape
+     */
     private int xblock;
     private int yblock;
     private int vblock;
     private char shapeblock;
     public Block(int x, int y, int velocity, char shape) {
+        //Constructor of Block checks also for invalid starting points and negative velocity
         if (x < 0 || y < 0 || velocity < 0) {
             throw new IllegalArgumentException();
         }

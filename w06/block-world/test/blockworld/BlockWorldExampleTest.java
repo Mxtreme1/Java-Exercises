@@ -64,6 +64,7 @@ public class BlockWorldExampleTest {
         w.observe();
         w.step();
         w.observe();
+        assertEquals(true, w.isDead());
     }
 
     @Test(expected = IllegalArgumentException.class)

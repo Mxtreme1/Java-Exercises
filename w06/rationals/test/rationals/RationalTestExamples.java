@@ -24,7 +24,7 @@ public class RationalTestExamples {
     public void testAdding1() {
         rationals.Rational r1 = new rationals.Rational(1, 4);
         rationals.Rational r2 = new rationals.Rational(-1, 4);
-        assertEquals(new rationals.Rational(0, 4), r1.add(r2));
+        assertEquals(new rationals.Rational(0, 1), r1.add(r2));
     }
 
     @Test
@@ -83,7 +83,7 @@ public class RationalTestExamples {
     @Test
     public void todouble() {
         rationals.Rational r1 = new rationals.Rational(1, 2);
-        assertEquals(0, r1.toDouble(), 0001);
+        assertEquals(0, r1.toDouble(), 0.001);
     }
 
     @Test
@@ -98,6 +98,11 @@ public class RationalTestExamples {
             return;
         }
         return;
+    }
+
+    @Test
+    public void zeroInNumerator() {
+        assertEquals(new Rational(0, 1) , new Rational(57, 76).add(new Rational(-57, 76)));
     }
 
     @Test(expected = IllegalArgumentException.class)
