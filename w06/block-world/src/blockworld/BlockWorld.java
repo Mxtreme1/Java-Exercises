@@ -1,5 +1,6 @@
 package blockworld;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,18 +10,20 @@ public class BlockWorld {
      */
     private int widthfield;
     private int heightfield;
-    private List<blockworld.Block> blocksfield;
+    List<Block> blocksfield = new ArrayList<Block>();
     private char emptyfield;
     public BlockWorld(int width, int height, List<blockworld.Block> blocks, char empty) {
         //Constructor of Blockworld also checks if all Blocks are in a valid position of the Blockworld at start
         this.widthfield = width;
         this.heightfield = height;
-        this.blocksfield = blocks;
         this.emptyfield = empty;
         for (blockworld.Block block : blocks) {
             if (block.getxblock() > width || block.getyblock() > height) {
                 throw new IllegalArgumentException();
             }
+        }
+        for(Block b : blocks) {
+            this.blocksfield.add(new Block(b.getxblock(), b.getyblock(), b.getvblock(), b.getshape()));
         }
     }
 

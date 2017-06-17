@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="1974f014-9ad6-4105-87cb-cf5ee03f7be4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blockworld/Block.java" afterPath="$PROJECT_DIR$/src/blockworld/Block.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blockworld/BlockWorld.java" afterPath="$PROJECT_DIR$/src/blockworld/BlockWorld.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -65,8 +64,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -117,7 +116,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -135,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BlockWorldExampleTest">
     <configuration default="false" name="BlockWorldExampleTest.testmultidim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -476,9 +475,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest.deadbeforeobserve" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest.deadbeforeobserve" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest.strangeerror" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BlockWorldExampleTest.testmultidim" />
       </list>
@@ -525,26 +524,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlockWorldExampleTest - 2017.06.13 at 14h 10m 08s.xml">
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 27m 02s.xml">
       <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_deadbeforeobserve - 2017.06.13 at 14h 19m 15s.xml">
-      <configuration name="BlockWorldExampleTest.deadbeforeobserve" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 29m 58s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_deadbeforeobserve - 2017.06.13 at 14h 20m 51s.xml">
-      <configuration name="BlockWorldExampleTest.deadbeforeobserve" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 33m 47s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_deadbeforeobserve - 2017.06.13 at 14h 31m 13s.xml">
-      <configuration name="BlockWorldExampleTest.deadbeforeobserve" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 34m 32s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_deadbeforeobserve - 2017.06.13 at 14h 31m 42s.xml">
-      <configuration name="BlockWorldExampleTest.deadbeforeobserve" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 35m 11s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_strangeerror - 2017.06.13 at 14h 01m 56s.xml">
-      <configuration name="BlockWorldExampleTest.strangeerror" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 39m 06s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BlockWorldExampleTest_strangeerror - 2017.06.13 at 14h 04m 24s.xml">
-      <configuration name="BlockWorldExampleTest.strangeerror" configurationId="JUnit" />
+    <history-entry file="BlockWorldExampleTest - 2017.06.17 at 10h 39m 44s.xml">
+      <configuration name="BlockWorldExampleTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BlockWorldExampleTest_strangeerror - 2017.06.13 at 14h 05m 10s.xml">
       <configuration name="BlockWorldExampleTest.strangeerror" configurationId="JUnit" />
@@ -568,7 +567,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -722,10 +721,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/blockworld/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/blockworld/BlockWorldExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+        <state relative-caret-position="89">
+          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1810#1817#0" expanded="true" />
@@ -733,29 +740,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blockworld/BlockWorld.java">
+    <entry file="file://$PROJECT_DIR$/src/blockworld/Block.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="484">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blockworld/Block.java">
+    <entry file="file://$PROJECT_DIR$/src/blockworld/BlockWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blockworld/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="37" column="4" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="440">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#337#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
