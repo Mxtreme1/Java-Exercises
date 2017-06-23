@@ -9,9 +9,7 @@ public interface Shape {
      * @param point
      * @return true iff point is inside.
      */
-    public boolean contains(V2 point) {
-
-    }
+    public boolean contains(V2 point);
 
     /**
      * Construct a new shape with the same features as this shape, but moved according to the displacement.
