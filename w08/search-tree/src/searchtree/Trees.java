@@ -1,16 +1,12 @@
 package searchtree;
 
 /**
- * Created by mr492 on 27/06/17.
+ * Created by mr492 on 30/06/17.
  */
-
 public class Trees {
-
-    public static BinarySearchTree makeTree(int[] elements) {
-        BinarySearchTree atree = new BinarySearchTree();
-        for (int i : elements) {
-            atree = atree.add(i);
-        }
-        return atree;
+    //Creates Trees
+    public static Tree makeTree(int[] elements) {
+        //Creates a Binary Search Tree with the given ints as values
+        return new BST(elements);
     }
 }

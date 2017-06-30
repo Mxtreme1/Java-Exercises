@@ -1,0 +1,3 @@
+intersection (-0.5)
+test case for parallel condition is failing (you  should compare it with null)
+All other testcases and correction is fine.
