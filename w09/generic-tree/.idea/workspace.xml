@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="11096de2-6f53-49c2-939f-c09dc9da0764" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchtree/Empty.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchtree/BST.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchtree/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchtree/Treeparts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/searchtree/Trees.java" afterPath="$PROJECT_DIR$/src/searchtree/Trees.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/searchtree/Tree.java" afterPath="$PROJECT_DIR$/src/searchtree/Tree.java" />
-    </list>
-    <ignored path="search-tree.iws" />
+    <list default="true" readonly="true" id="f6bb121b-ea4e-48b1-9d11-eeafb9d18a52" name="Default" comment="" />
+    <ignored path="generic-tree.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,19 +17,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="search-tree" />
+    <favorites_list name="generic-tree" />
   </component>
   <component name="FileEditorManager">
     <leaf />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -46,18 +30,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/searchtree/TreeTest.java" />
-        <option value="$PROJECT_DIR$/test/searchtree/ExmapleTests.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Branch.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Leaf.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Empty.java" />
         <option value="$PROJECT_DIR$/test/searchtree/TestExamples.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/BST.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Node.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Tree.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Treeparts.java" />
-        <option value="$PROJECT_DIR$/src/searchtree/Trees.java" />
+        <option value="$PROJECT_DIR$/test/generictree/TestExamples.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Empty.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Treeparts.java" />
+        <option value="$PROJECT_DIR$/src/generictree/BST.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Node.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Trees.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Leaf.java" />
+        <option value="$PROJECT_DIR$/src/generictree/Tree.java" />
       </list>
     </option>
   </component>
@@ -84,65 +65,78 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testcases" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generic-tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generictree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search-tree" />
+              <option name="myItemId" value="generic-tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generictree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="searchtree" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,45 +150,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestExamples.exampleTests">
-    <configuration default="false" name="TestExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="searchtree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="search-tree" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="searchtree" />
-      <option name="MAIN_CLASS_NAME" value="searchtree.TestExamples" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestExamples">
     <configuration default="false" name="TestExamples.exampleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="searchtree.*" />
+          <option name="PATTERN" value="generictree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="search-tree" />
+      <module name="generic-tree" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="searchtree" />
-      <option name="MAIN_CLASS_NAME" value="searchtree.TestExamples" />
+      <option name="PACKAGE_NAME" value="generictree" />
+      <option name="MAIN_CLASS_NAME" value="generictree.TestExamples" />
       <option name="METHOD_NAME" value="exampleTests" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -209,20 +177,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestExamples.string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="searchtree.*" />
+          <option name="PATTERN" value="generictree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="search-tree" />
+      <module name="generic-tree" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="searchtree" />
-      <option name="MAIN_CLASS_NAME" value="searchtree.TestExamples" />
-      <option name="METHOD_NAME" value="string" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="generictree" />
+      <option name="MAIN_CLASS_NAME" value="generictree.TestExamples" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -295,10 +263,7 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -390,7 +355,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="search-tree" />
+      <module name="generic-tree" />
       <envs />
       <method />
     </configuration>
@@ -442,16 +407,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestExamples" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestExamples.exampleTests" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestExamples.string" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestExamples.exampleTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestExamples" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestExamples.exampleTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestExamples.string" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestExamples" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestExamples" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestExamples.exampleTests" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -476,23 +439,18 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
-      <method>
-        <option name="Make" enabled="true" />
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method />
     </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="modificationStamps">
       <map>
         <entry key="$USER_HOME$/Desktop/2016-03-31-sbt-hello-world" value="1459437388844" />
-        <entry key="$PROJECT_DIR$/../../../../../gradual-java/github" value="2967299152020" />
+        <entry key="$PROJECT_DIR$/../../../../../gradual-java/github" value="1486364337352" />
         <entry key="$PROJECT_DIR$/../../../../../gradual-java/github-ecoop2016-ae" value="1463557573533" />
-        <entry key="$PROJECT_DIR$/../../../../../gradual-java/github-ecoop2016-ae-tmp/GradualConstraints" value="1468322652021" />
         <entry key="$PROJECT_DIR$/../../../../../gradual-java/github-ecoop2016-ae/GradualConstraints" value="1463995485283" />
         <entry key="$PROJECT_DIR$/../../../../../gradual-java/github-upstream" value="1464941637028" />
         <entry key="$PROJECT_DIR$/../../../../../gradual-java/github/GradualConstraints" value="1465316299725" />
-        <entry key="$PROJECT_DIR$/../../../../../gradual-java/sparta-annotations" value="1470905057678" />
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -508,44 +466,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="11096de2-6f53-49c2-939f-c09dc9da0764" name="Default" comment="" />
-      <created>1497865172299</created>
+      <changelist id="f6bb121b-ea4e-48b1-9d11-eeafb9d18a52" name="Default" comment="" />
+      <created>1498418858612</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1497865172299</updated>
+      <updated>1498418858612</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestExamples_exampleTests - 2017.06.30 at 22h 29m 43s.xml">
+    <history-entry file="TestExamples - 2017.06.25 at 21h 40m 18s.xml">
+      <configuration name="TestExamples" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExamples - 2017.06.25 at 21h 40m 40s.xml">
+      <configuration name="TestExamples" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExamples - 2017.06.25 at 22h 09m 34s.xml">
+      <configuration name="TestExamples" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExamples - 2017.06.25 at 22h 09m 44s.xml">
+      <configuration name="TestExamples" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestExamples_exampleTests - 2017.06.25 at 21h 36m 27s.xml">
       <configuration name="TestExamples.exampleTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExamples_exampleTests - 2017.06.30 at 22h 30m 44s.xml">
+    <history-entry file="TestExamples_exampleTests - 2017.06.25 at 21h 39m 52s.xml">
       <configuration name="TestExamples.exampleTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestExamples_exampleTests - 2017.06.30 at 22h 32m 25s.xml">
+    <history-entry file="TestExamples_exampleTests - 2017.06.25 at 21h 40m 00s.xml">
       <configuration name="TestExamples.exampleTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_exampleTests - 2017.06.30 at 22h 33m 12s.xml">
-      <configuration name="TestExamples.exampleTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_exampleTests - 2017.06.30 at 22h 44m 32s.xml">
-      <configuration name="TestExamples.exampleTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_string - 2017.06.29 at 16h 47m 40s.xml">
-      <configuration name="TestExamples.string" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_string - 2017.06.29 at 16h 56m 28s.xml">
-      <configuration name="TestExamples.string" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_string - 2017.06.29 at 16h 57m 33s.xml">
-      <configuration name="TestExamples.string" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_string - 2017.06.29 at 16h 58m 35s.xml">
-      <configuration name="TestExamples.string" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestExamples_string - 2017.06.30 at 22h 29m 35s.xml">
-      <configuration name="TestExamples.string" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -559,13 +508,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16979949" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25626567" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -577,7 +526,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -599,9 +548,7 @@
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -609,106 +556,89 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/searchtree/BinarySearchTree.java" />
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/searchtree/TestExamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Trees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Tree.java">
+    <entry file="file://$PROJECT_DIR$/test/generictree/TestExamples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Trees.java">
+    <entry file="file://$PROJECT_DIR$/src/generictree/Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Node.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Trees.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Leaf.java" />
+    <entry file="file://$PROJECT_DIR$/test/generictree/TestExamples.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/searchtree/TestExamples.java">
+    <entry file="file://$PROJECT_DIR$/src/generictree/Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Node.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Trees.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Leaf.java" />
+    <entry file="file://$PROJECT_DIR$/test/generictree/TestExamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generictree/Tree.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Node.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Trees.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Leaf.java" />
+    <entry file="file://$PROJECT_DIR$/test/generictree/TestExamples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generictree/Empty.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/Treeparts.java" />
+    <entry file="file://$PROJECT_DIR$/src/generictree/BST.java" />
+    <entry file="file://$PROJECT_DIR$/test/generictree/TestExamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generictree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1499506300212" expanded="false" signature="1310:1319" ph=" { " />
+            <marker date="1499506300212" expanded="false" signature="1332:1338" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Node.java" />
-    <entry file="file://$PROJECT_DIR$/src/searchtree/BinarySearchTree.java" />
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Trees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Tree.java">
+    <entry file="file://$PROJECT_DIR$/src/generictree/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Treeparts.java">
+    <entry file="file://$PROJECT_DIR$/src/generictree/Trees.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/BST.java">
+    <entry file="file://$PROJECT_DIR$/src/generictree/Leaf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="57" column="83" lean-forward="false" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Empty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchtree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/searchtree/TestExamples.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
