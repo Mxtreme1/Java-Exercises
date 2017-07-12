@@ -1,60 +1,44 @@
-package searchtree;
+package generictree;
 
 /**
  * Created by thiemann on 03.07.17.
  */
+//Class uses the type variable which needs to be comparable
 public class Node<T extends Comparable<T>> implements Tree<T> {
     private final Tree<T> left;
-    private final int v;
+    private final T v;
     private final Tree<T> right;
 
-    public Node(Tree<T> left, int v, Tree<T> right) {
+    public Node(Tree<T> left, T v, Tree<T> right) {
         this.left = left;
         this.v = v;
         this.right = right;
     }
 
     @Override
-    public Tree<T> add(int i) {
-        if (i == v) {
+    public Tree<T> add(T i) {
+        if (i.compareTo(v) == 0) {
             return this; // i is present, return unchanged
         }
-        if (i < v) {
+        if (i.compareTo(v) < 0) {
             Tree<T> newl = left.add(i);
-            return new Node(newl, v, right);
+            return new Node<T>(newl, v, right);
         } else {
             Tree<T> newr = right.add(i);
-            return new Node(left, v, newr);
+            return new Node<T>(left, v, newr);
         }
     }
 
     @Override
-    public boolean contains(int i) {
-        if (i == v) {
+    public boolean contains(T i) {
+        if (i.compareTo(v) == 0) {
             return true;
         }
-        if (i < v) {
+        if (i.compareTo(v) < 0) {
             return left.contains(i);
         } else {
             return right.contains(i);
         }
-    }
-
-    // not proper object-oriented style
-    public boolean alternativeContains(int i) {
-        Node node = this;
-        Tree<T> t;
-        if (i == v) {
-            return true;
-        }
-        if (i < v) {
-            t = node.left;
-        } else {
-            t = node.right;
-        }
-        //  Tree t may be a Node or Leaf
-        // incomplete
-        return false;
     }
 
     @Override
