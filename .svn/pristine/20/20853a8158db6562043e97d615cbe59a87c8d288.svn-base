@@ -1,0 +1,13 @@
+package uniquechars;
+
+public class Main {
+   public static int uniqueChars(Map<String, Integer> cache, String input) {
+       
+   } 
+    public static List<Integer> allUniqueChars(Map<String, Integer> cache, List<String> input) {
+      
+  } 
+  public static List<Integer> allUniqueChars(List<String> input) {
+      
+  }
+}

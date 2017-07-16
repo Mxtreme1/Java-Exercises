@@ -1,0 +1,44 @@
+package linenumbers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public static boolean isnumber(String stri) {
+    try {
+        Integer.parseInt(stri);
+    } catch(Exception e){
+        return false;
+    }
+    return true;
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in).useDelimiter("/n");
+        List<String> lines = new ArrayList<String>(); 
+        if (scan.hasNext()) {
+
+        while (scan.hasNext()) lines.add(scan.nextLine());
+        if (args.length == 0) {
+            for (int c = 0; c < lines.size(); c++) System.out.println(c + 1 + " " + lines.get(c));
+        }
+        else if (args.length == 1 && Main.isnumber(args[0])) {
+            for (int c = Integer.parseInt(args[0]) -1; c < lines.size(); c++) {
+                System.out.println(c+1 + " " + lines.get(c));
+            }
+        }
+        else if (args.length == 2 && Main.isnumber(args[0]) && Main.isnumber(args[1])) {
+            for (int c = Integer.parseInt(args[0]) -1; c < Integer.parseInt(args[1]); c++) {
+                System.out.println(c+1 + " " + lines.get(c));
+            }
+        }
+        else {
+            System.out.println("Bad arguments.");
+            System.out.println("Usage: line-numbers [start-number [end-number]]");
+        }
+        }
+        else System.out.println("");
+    }
+    
+}

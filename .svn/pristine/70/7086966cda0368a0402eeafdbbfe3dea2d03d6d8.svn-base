@@ -1,0 +1,43 @@
+package linenumbers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public boolean isnumber(String stri) {
+    try {
+        Integer.parseInt(stri);
+    } catch(Exception e){
+        return false;
+    }
+    return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in).useDelimiter("0");
+        List<String> lines = new ArrayList<String>(); 
+        boolean a = false;
+        boolean b = false;
+        while (scan.hasNext()) {
+            lines.add(scan.nextLine());
+        } 
+        if (args.length == 0) {
+            for (int c = 0; c < lines.size(); c++) {
+                System.out.println(c+1 + " " + lines.get(c));
+            }
+        }
+        else if (args.length == 1) {
+            for (int c = Integer.parseInt(args[0]); c < lines.size(); c++) {
+                System.out.println(c+1 + " " + lines.get(c));
+            }
+        }
+        else if (args.length == 2) {
+            for (int c = Integer.parseInt(args[0]); c < Integer.parseInt(args[1]); c++) {
+                System.out.println(c+1 + " " + lines.get(c));
+            }
+        }
+    }
+    
+}

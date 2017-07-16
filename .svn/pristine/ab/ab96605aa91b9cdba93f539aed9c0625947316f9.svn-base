@@ -1,0 +1,93 @@
+package rationals;
+
+public class Rational {
+    long nom;
+    long denom;
+    public Rational(long nominator, long denominator) {
+        if (denominator == 0) {
+            throw new IllegalArgumentException();
+        }
+        this.nom = nominator;
+        this.denom = denominator;
+        if (this.nom == 0) {
+            this.denom = 1;
+        }
+        if (this.denom < 0 && this.nom >= 0) {
+            this.denom = - this.denom;
+            this.nom = - this.nom;
+        }
+        else if (this.denom < 0 && this.nom < 0) {
+            this.denom = Math.abs(this.denom);
+            this.nom = Math.abs(this.nom);
+        }
+   }
+    public Rational cancel() {
+        long thisnewnom;
+        long thisnewdenom;
+        double shortened = 1;
+        for (long i = 2; i <= Math.min(Math.abs(this.nom), this.denom); i++) {
+            if (this.denom % i == 0 && this.nom % i == 0) {
+                shortened = i;
+            }
+        }
+        thisnewnom = (long)(this.nom / shortened);
+        thisnewdenom = (long)(this.denom /shortened);
+        return new Rational(thisnewnom, thisnewdenom);
+    }
+    private long euclid(long n, long m) {
+        while (m != 0) {
+          long o = n % m;
+          n = m;
+          m = o;
+       } 
+        return n;
+    }
+    private long lcm(long m, long n) {
+        return Math.abs(n * m) / euclid(n, m);
+    }
+    public Rational add(Rational r) {
+        //use lcm to return correct rational
+        this.cancel();
+        r.cancel();
+        long mult = lcm(this.getDenominator(), r.getDenominator());
+        long multthis = mult / this.getDenominator();
+        long multr = mult / r.getDenominator();
+        if (this.getNominator() + r.getNominator() == 0 && this.getDenominator() == r.getDenominator()) {
+            return new Rational(0, 1);
+        }
+        return new Rational(Math.addExact(Math.multiplyExact(this.getNominator(), multthis), Math.multiplyExact(r.getNominator(), multr)), mult);
+
+    }
+    public Rational multiply(Rational r) {
+        r.cancel();
+        this.cancel();
+        return new Rational(this.nom * r.getNominator(), this.denom * r.getDenominator());
+    }
+    public Rational invert() {
+        if (this.nom == 0) {
+            throw new IllegalArgumentException();
+        }
+        return new Rational(this.denom, this.nom);
+    }
+    public double toDouble() {
+        return this.nom / this.denom; 
+    }
+    public long getNominator() {
+        return this.cancel().nom;
+    }
+    public long getDenominator() {
+        return this.cancel().denom;
+    }
+
+    public String toString() {
+        return this.nom + " / " + this.denom;
+    }
+
+    @Override public boolean equals(Object r) {
+        //euclid and then compare nom and denom
+            if (this.cancel().getNominator() == ((Rational) r).cancel().getNominator() && this.cancel().getDenominator() == ((Rational) r).cancel().getDenominator()) {
+                return true;
+            }
+            return false;
+    }
+}

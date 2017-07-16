@@ -1,0 +1,25 @@
+package shapes;
+
+import java.util.List;
+
+/**
+ * Created by mr492 on 21/06/17.
+ */
+public class Shapes {
+    public static Shape makeEllipse(V2 center, V2 radii) {
+        return new Ellipse(center, radii);
+    }
+    public static Shape makeRectangle(V2 upperLeftCorner, V2 dimensions) {
+        if (dimensions.getX() <= 0 || dimensions.getY() <= 0) {
+            throw new IllegalArgumentException();
+        }
+        V2 upri = new V2(upperLeftCorner.getX() + dimensions.getX(), upperLeftCorner.getY());
+        V2 uple = upperLeftCorner;
+        V2 dori = new V2(upperLeftCorner.getX() + dimensions.getX(), upperLeftCorner.getY() - dimensions.getY());
+        V2 dole = new V2(upperLeftCorner.getX(), upperLeftCorner.getY() - dimensions.getY());
+        return new Rectangle(uple, upri, dole, dori);
+    }
+    public static Shape makePicture(List<Shape> shapes) {
+        return new Picture(shapes);
+    }
+}

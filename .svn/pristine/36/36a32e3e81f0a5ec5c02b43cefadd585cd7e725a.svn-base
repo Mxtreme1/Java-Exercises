@@ -1,0 +1,107 @@
+package rationals;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class RationalTestExamples {
+
+    @Test
+    public void testAddingPrecicely() {
+        Rational r1 = new Rational(10000000000l, 1);
+        rationals.Rational r2 = new rationals.Rational(1, 2);
+        assertEquals(new rationals.Rational(20000000001l, 2), r1.add(r2));
+    }
+
+    @Test
+    public void testAdding() {
+        rationals.Rational r1 = new rationals.Rational(1, 4);
+        rationals.Rational r2 = new rationals.Rational(-2, 4);
+        assertEquals(new rationals.Rational(-1, 4), r1.add(r2));
+    }
+
+    @Test
+    public void testAdding1() {
+        rationals.Rational r1 = new rationals.Rational(1, 4);
+        rationals.Rational r2 = new rationals.Rational(-1, 4);
+        assertEquals(new rationals.Rational(0, 4), r1.add(r2));
+    }
+
+    @Test
+    public void testUniqueNominator() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(2, 4);
+        assertEquals(r1.getNominator(), r2.getNominator());
+        assertEquals(r1.getDenominator(), r2.getDenominator());
+    }
+
+    @Test
+    public void testUniqueNominator1() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(8, 16);
+        assertEquals(r1.getNominator(), r2.getNominator());
+        assertEquals(r1.getDenominator(), r2.getDenominator());
+    }
+
+    @Test
+    public void multiply() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(2, 4);
+        assertEquals(new rationals.Rational(1, 4).getNominator(), r2.multiply(r1).getNominator());
+        assertEquals(new rationals.Rational(1, 4).getDenominator(), r2.multiply(r1).getDenominator());
+    }
+
+    @Test
+    public void multiply0() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(0, 4);
+        assertEquals(new rationals.Rational(0, 8).getNominator(), r2.multiply(r1).getNominator());
+        assertEquals(new rationals.Rational(0, 8).getDenominator(), r2.multiply(r1).getDenominator());
+    }
+
+    @Test
+    public void multiplyneg() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(-1, 4);
+        assertEquals(new rationals.Rational(-1, 8).getNominator(), r2.multiply(r1).getNominator());
+        assertEquals(new rationals.Rational(-1, 8).getDenominator(), r2.multiply(r1).getDenominator());
+    }
+
+    @Test
+    public void invert() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        assertEquals(new rationals.Rational(2, 1).getNominator(), r1.invert().getNominator());
+        assertEquals(new rationals.Rational(2, 1).getDenominator(), r1.invert().getDenominator());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void invert0() {
+        rationals.Rational r1 = new rationals.Rational(0, 2);
+        r1.invert();
+    }
+
+    @Test
+    public void todouble() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        assertEquals(0, r1.toDouble(), 0001);
+    }
+
+    @Test
+    public void equals() {
+        rationals.Rational r1 = new rationals.Rational(1, 2);
+        rationals.Rational r2 = new rationals.Rational(2, 4);
+        rationals.Rational r3 = new rationals.Rational(3, 4);
+        if (r1.equals(r3)){
+            throw new Error("equals is incorrect");
+        }
+        if(r1.equals(r2)) {
+            return;
+        }
+        return;
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testThrowingWithDenominatorZero() {
+        new rationals.Rational(1, 0);
+    }
+}

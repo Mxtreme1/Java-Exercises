@@ -1,0 +1,116 @@
+package rationals;
+
+public class Rational {
+
+    private long nominator;
+    private long denominator;
+
+    public Rational(long nominator, long denominator) {
+        if (denominator == 0) {
+            throw new IllegalArgumentException();
+        }
+        this.nominator = nominator;
+	    this.denominator = denominator;
+        this.cancel();
+        if (this.nominator == 0) {
+            this.denominator = 1; 
+        }
+        else if (this.denominator < 0 && this.nominator > 0) {
+            this.denominator = - this.denominator; 
+            this.nominator = - this.nominator;
+        }
+        else if (this.nominator < 0 && this.denominator < 0) {
+            this.nominator = - this.nominator;
+            this.denominator = - this.denominator; 
+        }
+    }
+    
+    public long getNominator() {
+    	return this.nominator;
+    }
+
+    public long getDenominator() {
+        return this.denominator;
+    }
+
+    public Integer lcm(){
+        return 1;
+    }
+
+    public Long euclid(long a, long b) {
+        long h;
+        while (b != 0) {
+            h = a % b;
+            a = b;
+            b = h;
+        }
+        return a;
+    }
+
+    public void cancel() {
+        long shorten = euclid(this.nominator, this.denominator);
+        this.nominator = this.nominator / shorten;
+        this.denominator = this.denominator / shorten;
+        if (this.nominator == 0) {
+            this.denominator = 1;
+        }
+        else if (this.denominator < 0 && this.nominator > 0) {
+            this.denominator = - this.denominator;
+            this.nominator = - this.nominator;
+        }
+        else if (this.nominator < 0 && this.denominator < 0) {
+            this.nominator = - this.nominator;
+            this.denominator = - this.denominator;
+        }
+    }
+
+    public Rational add(Rational r) {
+        this.cancel();
+        r.cancel();
+        long first = euclid(r.denominator, this.getDenominator());
+        long newnum = Math.addExact(Math.multiplyExact(this.denominator / first, r.getNominator()), Math.multiplyExact(this.nominator, r.getDenominator() / first));
+        long newdenom = Math.multiplyExact(this.denominator, r.getDenominator() / first);
+        Rational added = new Rational(newnum, newdenom);
+        added.cancel();
+        return added;
+        
+    }
+    public Rational multiply(Rational r) {
+        this.cancel();
+        r.cancel();
+        long l = euclid(this.nominator, r.getDenominator());
+        long re = euclid(this.denominator, r.getNominator());
+        long newnum = Math.multiplyExact(this.nominator / l, r.getNominator() / re);
+        long newdenom = Math.multiplyExact(this.denominator / re, r.getDenominator() / l);
+        Rational multiplied = new Rational(newnum, newdenom);
+        multiplied.cancel();
+        return multiplied;
+    }
+
+    public Rational invert() {
+        return new Rational(this.denominator, this.nominator);
+    }
+
+    public double toDouble() {
+        return this.nominator / this.denominator;
+    }
+
+    public String toString() {
+        return this.nominator + " / " + this.denominator;
+    }
+
+    @Override public boolean equals(Object r) {
+        if (this == r) {
+            return true;
+        }
+        if (r instanceof Rational) {
+            ((Rational) r).cancel();
+            this.cancel();
+            if (this.nominator == ((Rational) r).getNominator() && this.denominator == ((Rational) r).getDenominator()) {
+                return true;
+            }
+            return false;
+        }
+        return false;
+    }
+}

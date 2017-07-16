@@ -1,0 +1,25 @@
+package anagrams;
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] stray) {
+        ArrayList<Character> first = new ArrayList<Character>();
+        for (char c : stray[0].toLowerCase().toCharArray()) {
+          first.add(c);
+        }
+        ArrayList<Character> second = new ArrayList<Character>();
+        for (char c : stray[1].toLowerCase().toCharArray()) {
+          second.add(c);
+        }
+        if (second.size() == first.size()) {
+           for (int i = 0; i < first.size(); i++) {
+                if (!second.contains(first.get(i))) {
+                    System.out.println("Not anagrams");
+                    return;
+                }
+           } 
+        } 
+        System.out.println("Anagrams");
+   } 
+}

@@ -1,0 +1,42 @@
+package uniquechars;
+
+import java.util.*;
+
+public class Main {
+   public static int uniqueChars(Map<String, Integer> cache, String input) {
+    List<Character> list = new ArrayList<Character>();
+    int counter = 0;
+
+    if (!cache.containsKey(input)) {
+        
+    for (int i = 0; i < input.length(); i++) {
+       if (!list.contains(input.toCharArray()[i])) {
+          list.add(input.toCharArray()[i]);
+            counter++;
+       } 
+    }
+    cache.put(input, counter);
+    return counter;
+    }
+    else {
+        return cache.get(input);
+    }
+
+   } 
+    public static List<Integer> allUniqueChars(Map<String, Integer> cache, List<String> input) {
+    List<Integer> list = new ArrayList<Integer>();
+    for (int i = 0; i < input.size(); i++) {
+        list.add(Main.uniqueChars(cache, input.get(i)));
+    }
+    return list; 
+  } 
+  public static List<Integer> allUniqueChars(List<String> input) {
+    Map<String, Integer> cache = new HashMap<String, Integer>();
+    List<Integer> list = new ArrayList<Integer>();
+
+    for (int i = 0; i < input.size(); i++) {
+        list.add(Main.uniqueChars(cache, input.get(i)));
+    }
+    return list;
+  }
+}

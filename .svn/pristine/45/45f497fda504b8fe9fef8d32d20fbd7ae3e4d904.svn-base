@@ -1,0 +1,47 @@
+package shapes;
+
+/**
+ * Created by mr492 on 21/06/17.
+ */
+
+public class Rectangle implements Shape{
+    public static double uplex;
+    public static double upley;
+    public static double uprix;
+    public static double upriy;
+    public static double dolex;
+    public static double doley;
+    public static double dorex;
+    public static double dorey;
+    public Rectangle(V2 uple, V2 upri, V2 dole, V2 dore) {
+        this.uplex = uple.getX();
+        this.upley = uple.getY();
+        this.uprix = upri.getX();
+        this.upriy = upri.getY();
+        this.dolex = dole.getX();
+        this.doley = dole.getY();
+        this.dorex = dore.getX();
+        this.dorey = dore.getY();
+    }
+    public boolean contains(V2 point) {
+        double px = point.getX();
+        double py = point.getY();
+        if (px >= uplex && px <= uprix && py >= doley && py <= upley) {
+            return true;
+        }
+        return false;
+    }
+    public Shape move(V2 displacement) {
+        V2 movedUple = new V2(this.uplex + displacement.getX(), this.upley + displacement.getY());
+        V2 movedUpri = new V2(this.uprix + displacement.getX(), this.upriy + displacement.getY());
+        V2 movedDole = new V2(this.dolex + displacement.getX(), this.doley + displacement.getY());
+        V2 movedDore = new V2(this.dorex + displacement.getX(), this.dorey + displacement.getY());
+        return new Rectangle(movedUple, movedUpri, movedDole, movedDore);
+    }
+    public Box boundingBox() {
+        double dimx = Math.abs(this.uplex - this.uprix);
+        double dimy = Math.abs(this.upley - this.doley);
+        V2 dimensions = new V2(dimx, dimy);
+        return new Box(new V2(this.uplex, this.upley), dimensions);
+    }
+}

@@ -1,0 +1,36 @@
+package rainfall;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class Main {
+    public static List<Optional<Double>> rainfall(List<Double> readings) {
+        Double sum = 0.0;
+        Double read = 0.0;
+        List<Optional<Double>> opts = new ArrayList<>();
+        for (Double r : readings) {
+            if (r != -999) {
+                if (r >= 0) {
+                    sum += r;
+                    read++;
+                }
+                else {
+                    continue;
+                }
+            }
+            else {
+                if (read == 0) {
+                    opts.add(Optional.empty());
+                }
+                else {
+                    opts.add(Optional.of((sum / read)));
+                    sum = 0.0;
+                    read = 0.0;
+                }
+                continue;
+            }
+        }
+        return opts;
+    }
+}

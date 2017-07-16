@@ -1,0 +1,48 @@
+package anagrams;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] s) {
+        Scanner scan = new Scanner(System.in);
+        String fir = "";
+        String sec = "";
+        ArrayList<Character> first = new ArrayList<Character>();
+        ArrayList<Character> second = new ArrayList<Character>();
+        if (scan.hasNext()) {
+            fir = scan.next(); 
+            if (scan.hasNext()) {
+               sec = scan.next(); 
+            }
+            else {
+                System.out.println("Not anagrams");
+                return;
+            }
+        }
+        else {
+            System.out.println("Not anagrams");
+            return;
+        }
+        for (char c : fir.toLowerCase().toCharArray()) {
+          first.add(c);
+        }
+        for (char c : sec.toLowerCase().toCharArray()) {
+          second.add(c);
+        }
+        if (second.size() == first.size()) {
+            System.out.println(Integer.toString(second.size()) + Integer.toString(first.size()));
+           for (int i = 0; i < first.size(); i++) {
+                if (!second.contains(first.get(i))) {
+                    System.out.println("Not anagrams");
+                    return;
+                }
+           } 
+        }
+        else {
+            System.out.println("Not anagrams");
+            return;
+        }
+        System.out.println("Anagrams");
+   } 
+}

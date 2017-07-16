@@ -1,0 +1,32 @@
+package integerprimitives;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        StringBuilder stri = new StringBuilder();
+        
+        if (scan.hasNextInt() || scan.hasNextByte() || scan.hasNextLong() || scan.hasNextShort())  {
+            if (scan.hasNextShort()) {
+
+                stri.append("* short\n");
+            }
+            if (scan.hasNextInt()) {
+                stri.append("* int\n");
+            }
+            if (scan.hasNextLong()) {
+                stri.append("* long\n");
+            }
+            if (scan.hasNextByte()) {
+                stri.append("* byte\n");
+            }
+            System.out.println(String.valueOf(scan.next() + " fits in:"));
+            System.out.println(stri);
+        }
+        else {
+            System.out.println("\"" + String.valueOf(scan.next()) + "\" doesn't fit anywhere.");
+        }
+        scan.close();
+    }
+}

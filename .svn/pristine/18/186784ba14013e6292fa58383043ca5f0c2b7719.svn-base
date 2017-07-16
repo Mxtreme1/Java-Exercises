@@ -1,0 +1,43 @@
+package timetowords;
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+        
+       Scanner scan = new Scanner(System.in);
+       int hour = scan.nextInt();
+        int minute = scan.nextInt();
+        String stri = "";
+        String[] clock = { "stuff", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven",
+                "twelve", "thirteen", "fourteen", "quarter", "sixteen", "seventeen", "eighteen", "nineteen", "twenty",
+                "twentyone", "twentytwo", "twentythree", "twentyfour", "twentyfive", "twentysix", "twentyseven",
+                "twentyeight", "twentynine" };
+
+        if (hour <= 0 || hour > 12) {
+            System.out.println("Wrong Input");
+            
+        }
+        else if (hour > 0 && hour < 13 || minute >= 0 && minute <= 60) {
+            if (minute == 0) {
+                System.out.println(clock[hour] + " o'clock");
+            }
+            else if (minute == 30) {
+                System.out.println("half past " + clock[hour]);
+            } 
+
+            else if (minute == 1) {
+                    System.out.println("one minute past " + clock[hour]);
+            } 
+            else if (minute == 59) {
+                    System.out.println("one minute to " + clock[(hour + 1)]);
+                }
+            else if (minute < 30) {
+                System.out.println(clock[minute] + " minutes past " + clock[hour]);
+            }
+            else if (minute > 30) {
+                System.out.println(clock[60 - minute] + " minutes to " + clock[(hour + 1)]);
+            }
+        }
+   } 
+}

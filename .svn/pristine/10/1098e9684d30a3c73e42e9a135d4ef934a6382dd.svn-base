@@ -1,0 +1,19 @@
+package convertunits;
+
+public class Main {
+   public static double km2miles(double x) {
+        return x * 0.62; 
+   } 
+    
+   double miles2km(double x) {
+        return x * 1.61; 
+    }
+    
+    double celsius2fahrenheit(double x) {
+        return 32.0 + x * 1.8; 
+    }
+    
+    double fahrenheit2celsius(double x) {
+        return -17.78 + x * 0.56;  
+    }
+}

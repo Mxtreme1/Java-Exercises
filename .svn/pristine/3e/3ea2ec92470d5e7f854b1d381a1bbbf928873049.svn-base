@@ -1,0 +1,26 @@
+package sessions;
+
+import java.util.Queue;
+
+/**
+ * Created by mr492 on 07/07/17.
+ */
+public class Rcv implements Session {
+    Session rest;
+    public Rcv(Session rest) {
+        this.rest = rest;
+    }
+    @Override
+    public boolean check(Queue<Message> trace) {
+        Message next = trace.poll();
+        if (next != null && next.getMode().equals(MessageMode.RECEIVE) && next.getKind().equals(MessageKind.DATA)) {
+            return rest.check(trace);
+        }
+        return false;
+    }
+
+    @Override
+    public Session dual() {
+        return new Snd(this.rest.dual());
+    }
+}

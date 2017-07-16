@@ -1,0 +1,65 @@
+package listoperations;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       String command = "commander";
+       String word1 = "exists";
+       String word2 = "delimiter";
+       List<String> list = new ArrayList<String>();
+       String line = "";
+       List<String> whole = new ArrayList<>();
+       while (scan.hasNextLine()) {
+           line = scan.nextLine();
+           whole = line.split(" ");
+           if (scan.hasNext()) {
+               command = whole.get(0);
+               if (scan.hasNext()) {
+                   word1 = whole.get(1);
+                   if (scan.hasNext()) {
+                       word2 = whole.get(2);
+                   }
+               }
+           }
+           if (word1.matches("/d*") && word2.matches("/d*")) {
+               System.out.println("je");
+               if (command.equalsIgnoreCase("append") && word1 != "exists") {
+                   System.out.println("Jo");
+                   list.add(word1);
+               } else if (command.equalsIgnoreCase("pop")) {
+                   if (list.size() > 0) {
+                       list.remove(-1);
+                   } else {
+                       System.out.println("DOES NOT COMPUTE");
+                   }
+               } else if (command.equalsIgnoreCase("set")) {
+                   try {
+                       list.set(Integer.parseInt(word1), word2);
+                   } catch (Exception e) {
+                       System.out.println("DOES NOT COMPUTE");
+                   }
+               } else if (command.equalsIgnoreCase("remove-first")) {
+                   list.remove(word1);
+               } else if (command.equalsIgnoreCase("remove-all")) {
+                   while (list.contains(word1)) {
+                       list.remove(word1);
+                   }
+               } else if (command.equalsIgnoreCase("print")) {
+                   System.out.print(":: ");
+                   for (int i = 0; i < list.size(); i++) {
+                       System.out.print(list.get(i));
+                   }
+               } else if (command.equalsIgnoreCase("sort")) {
+                   Collections.sort(list);
+               } else if (command.equalsIgnoreCase("reverse")) {
+                   Collections.reverse(list);
+               }
+           }
+       }
+   }
+}

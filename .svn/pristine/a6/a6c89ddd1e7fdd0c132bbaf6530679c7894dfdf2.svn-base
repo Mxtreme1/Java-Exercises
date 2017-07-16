@@ -1,0 +1,58 @@
+package phonebook;
+
+import java.sql.Array;
+import java.util.*;
+
+public class Main {
+   public static void main(String[] arr) {
+       Scanner scan = new Scanner(System.in); 
+        int n;
+        String first_name;
+        String second_name;
+        String number;
+        int realnumber;
+        Map<String, Integer> book = new HashMap<String, Integer>();
+
+      if (scan.hasNext()) {
+         try {
+             n = Integer.parseInt(scan.next());
+             if (n == 0){
+                 return;
+             }
+             for (int i = 0; i < n; i++) {
+                 first_name = scan.next();
+                number = scan.next();
+                 try {
+                     realnumber = Integer.parseInt(number);
+                 } catch (Exception e) {
+                     second_name = number;
+                     realnumber = Integer.parseInt(scan.next());
+                     first_name = first_name + " " + second_name;
+                 }
+                 if (book.containsKey(first_name)) {
+                     System.out.println("Warning: overwriting entry for: " + first_name);
+                 }
+                 book.put(first_name, realnumber);
+                 System.out.println(book.toString());
+             }
+         } catch(Exception e){
+             System.out.println("Error: cannot parse phone book.");
+         }
+         String nothing = scan.nextLine();
+         while (scan.hasNextLine()) {
+             String cur_name = scan.next();
+            if (cur_name.matches("[A-Za-z]+( [A-Za-z]+)?")) {
+               if (book.containsKey(cur_name)) {
+                  System.out.println(cur_name + " = " + book.get(cur_name)); 
+               } 
+               else {
+                   System.out.println("Not found: " + cur_name);
+               }
+            } 
+            else {
+                System.out.println("Not a name: " + cur_name);
+            }
+         }
+      } 
+   } 
+}

@@ -1,0 +1,30 @@
+package caesarcipher;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Main.encode("middle-Outz", 2));
+    }
+  public static String encode(String input, int shift) {
+      char[] chars = input.toCharArray();
+      StringBuilder stri = new StringBuilder(input.length());
+
+      for (int i = 0; i < chars.length; i++) {
+          int ord = (int)chars[i];
+          if (ord > 64 && ord < 91) {
+                ord += shift;
+                if (ord > 90) {
+                    ord -= 26;
+                }
+          }
+          else if (ord > 96 && ord < 123) {
+              ord += shift;
+            if (ord > 122) {
+                ord -= 26;
+            }
+          }
+          stri.append((char)ord);
+      }
+      return stri.toString();
+
+      }                  
+        }

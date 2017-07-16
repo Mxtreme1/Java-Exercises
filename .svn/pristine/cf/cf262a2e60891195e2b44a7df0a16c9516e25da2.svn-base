@@ -1,0 +1,56 @@
+package shapes;
+
+import sun.security.provider.SHA;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by mr492 on 22/06/17.
+ */
+
+public class Picture implements Shape {
+    List<Shape> elements;
+    public Picture(List<Shape> shapes){
+       this.elements = shapes;
+    }
+
+    public boolean contains(V2 point) {
+        for (Shape ashape : this.elements) {
+            if (ashape.contains(point)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public Shape move(V2 displacement) {
+        List<Shape> newelements = new ArrayList<Shape>();
+        for (Shape elem : this.elements) {
+            newelements.add(elem.move(displacement));
+        }
+        return new Picture(newelements);
+    }
+    public Box boundingBox() {
+        double leftx = Long.MAX_VALUE;
+        double lefty = Long.MIN_VALUE;
+        double dimx = Long.MIN_VALUE;
+        double dimy = Long.MIN_VALUE;
+        for (Shape elem : this.elements) {
+            if (elem.boundingBox().getUpperLeftCorner().getX() < leftx) {
+                leftx = elem.boundingBox().getUpperLeftCorner().getX();
+            }
+            if (elem.boundingBox().getUpperLeftCorner().getY() > lefty) {
+                lefty = elem.boundingBox().getUpperLeftCorner().getY();
+            }
+            if (elem.boundingBox().getDimensions().getX() > dimx) {
+                dimx = elem.boundingBox().getDimensions().getX();
+            }
+            if (elem.boundingBox().getDimensions().getY() > dimy) {
+                dimy = elem.boundingBox().getDimensions().getY();
+            }
+        }
+        V2 upleftcorner = new V2(leftx, lefty);
+        V2 dimension = new V2(dimx, dimy);
+        return new Box(upleftcorner, dimension);
+    }
+}

@@ -1,0 +1,23 @@
+package conditionalfunctions;
+
+import static java.lang.Math.abs;
+
+public class Functions {
+
+    public static String turbineControl(double f) {
+        String stri = "";
+        if (f <= 49 || f >= 51) {
+          stri = "DISCONNECT";  
+        }   
+        else if (abs(f - 50 ) <= 0.001) {
+            stri = "STEADY";
+        }
+        else if (f < 50) {
+            stri = "MORE_WATER"; 
+        }
+        else if (f > 50) {
+            stri = "LESS_WATER"; 
+        }
+        return stri;
+    }
+}

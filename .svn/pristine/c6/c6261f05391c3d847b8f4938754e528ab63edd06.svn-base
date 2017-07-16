@@ -1,0 +1,49 @@
+package integerprimitives;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+        Scanner scan = new Scanner(System.in);
+        //String Builder to combine Stringparts
+        StringBuilder stri = new StringBuilder();
+         
+        //check if scan has int, byte, long or short in it
+        if (scan.hasNextInt() || scan.hasNextByte() || scan.hasNextLong() || scan.hasNextShort())  {
+            if (scan.hasNextByte()) {
+                stri.append("* byte\n");
+            }
+            if (scan.hasNextShort()) {
+
+                stri.append("* short\n");
+            }
+            if (scan.hasNextInt()) {
+                stri.append("* int\n");
+            }
+            if (scan.hasNextLong()) {
+                stri.append("* long\n");
+            }
+            System.out.println(String.valueOf(scan.next() + " fits in:"));
+            System.out.println(stri);
+        }
+        else {
+            //if line is empty say it doesnt fit anywhere
+            if (scan.findInLine("(?=\\S)") != null) {
+                System.out.println("\"" + String.valueOf(scan.next()) + "\" doesn't fit anywhere.");
+            }
+            //if scan doesnt contain either type and isnt empty say it doesnt
+            //fit anywhere
+            else {
+                System.out.println("\"" + String.valueOf(scan.next()) + "\" doesn't fit anywhere.");
+            }
+        }
+        //close the scan
+        scan.close();
+        //if any exception say it doesnt fit anywhere
+        } catch(Exception e){
+                System.out.println("\"\" doesn't fit anywhere.");
+        }
+        scan.
+    }
+}

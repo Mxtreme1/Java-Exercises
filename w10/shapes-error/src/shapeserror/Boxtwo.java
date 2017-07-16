@@ -13,6 +13,7 @@ public class Boxtwo {
      *
      */
     public Boxtwo(V2 lowerRightCorner, V2 dimensions) {
+        //Now uses dimensions.getX instead of 2 times getY
         if (dimensions.getX() < 0 || dimensions.getY() < 0) {
             throw new IllegalArgumentException("Bad dimensions: " + dimensions);
         }

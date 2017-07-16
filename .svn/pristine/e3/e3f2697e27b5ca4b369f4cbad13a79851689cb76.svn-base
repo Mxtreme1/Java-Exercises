@@ -1,0 +1,23 @@
+package linenumbers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import com.sun.xml.internal.ws.util.StringUtils;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in).useDelimiter("0");
+        List<String> lines = new ArrayList<String>(); 
+        while (scan.hasNext()) {
+            lines.add(scan.next()); 
+        }
+        if (StringUtils.isNumeric(args[0]) && StringUtils.isNumeric(args[1])) {
+            
+        }  
+        for (int c = 0; c < lines.size(); c++) {
+            System.out.println(c+1 + " " + lines[c]);
+        }
+    }
+    
+}

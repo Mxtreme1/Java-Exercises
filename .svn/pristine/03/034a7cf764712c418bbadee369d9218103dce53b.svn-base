@@ -1,0 +1,47 @@
+package linenumbers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        List<String> lines = new ArrayList<String>();
+        int min = 1;
+        int max = Integer.MAX_VALUE; 
+        int c = 0;
+        if (args.length > 0) {
+            
+            try {
+                min = Integer.parseInt(args[0]); 
+                if (args.length == 2) {
+                try {
+                    max = Integer.parseInt(args[1]);
+                } catch(Exception e){
+                    System.out.println("Bad arguments.");
+                    System.out.println("Usage: line-numbers [start-number [end-number]]");
+                    System.exit(0);
+                }
+            }
+            } catch(Exception e){
+                System.out.println("Bad arguments.");
+                System.out.println("Usage: line-numbers [start-number [end-number]]");
+                System.exit(0);
+            }
+        }
+
+        if (scan.hasNext()) {
+            while (scan.hasNextLine()) {
+            c++;
+            String currentline = scan.nextLine();
+            if (c >= min && c <= max) {
+                System.out.println(c + " " + currentline);
+            }
+            }
+        }
+        else System.out.println("");
+        scan.close();
+    }
+}

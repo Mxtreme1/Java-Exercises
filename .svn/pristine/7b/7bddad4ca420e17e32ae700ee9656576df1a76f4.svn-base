@@ -1,0 +1,61 @@
+package blockworld;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class BlockWorld {
+    private int widthfield;
+    private int heightfield;
+    private List<blockworld.Block> blocksfield;
+    private char emptyfield;
+    public BlockWorld(int width, int height, List<blockworld.Block> blocks, char empty) {
+        this.widthfield = width;
+        this.heightfield = height;
+        this.blocksfield = blocks;
+        this.emptyfield = empty;
+        for (blockworld.Block block : blocks) {
+            if (block.getxblock() > width || block.getyblock() > height) {
+                throw new IllegalArgumentException();
+            }
+        }
+    }
+
+    public int getWidth() {
+        return this.widthfield; 
+    }
+
+    public int getHeight() {
+        return this.heightfield; 
+    }
+
+    public char[][] observe() {
+        char[][] observed = new char[this.widthfield][this.heightfield];
+            for (char[] carray : observed) {
+                Arrays.fill(carray, this.emptyfield);
+            }
+            for (blockworld.Block block : this.blocksfield) {
+                char position = observed[block.getxblock()][block.getyblock()];
+                if (position == this.emptyfield || position < block.getshape()) {
+                    observed[block.getxblock()][block.getyblock()] = block.getshape();
+                }
+
+            }
+            return observed;
+        }
+    public void step() {
+        for (blockworld.Block block : this.blocksfield) {
+            if (block.getyblock() < this.heightfield - 1) {
+                block.setyblock(block.getyblock() + block.getvblock());
+            }
+        }
+    
+    }
+    public boolean isDead() {
+        for (blockworld.Block block : this.blocksfield) {
+            if (block.getyblock() != this.heightfield -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
