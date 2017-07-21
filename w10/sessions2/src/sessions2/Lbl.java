@@ -13,6 +13,7 @@ public class Lbl implements Session {
     public Lbl(String labelName, Session body) {
         this.labelName = labelName;
         this.body = body;
+
     }
 
     @Override
