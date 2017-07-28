@@ -1,5 +1,6 @@
 package simplepool;
 
+
 /**
  * Created by mr492 on 28/07/17.
  */
@@ -27,44 +28,50 @@ public class PoolWorld implements IPoolWorld{
 
     @Override
     public IPoolWorld step(double seconds) {
-        V2 p1 = Physics.positionAtTime(seconds, p0, new V2(Math.abs(v0.getX()), Math.abs(v0.getY())), ar);
+        V2 p1 = new V2(Physics.positionAtTime(seconds, p0, v0, xacc).getX(), Physics.positionAtTime(seconds, p0, v0, yacc).getY());
         V2 v1 = new V2(v0.getX() - this.xacc * seconds, v0.getY() - this.yacc * seconds);
-        double p2x = (p1.getX() - p0.getX()) % l;
-        double p2y = (p1.getY() - p0.getY()) % w;
+        double xdist;
+        double ydist;
         double pxnew;
         double pynew;
-        double xhits = (Math.floor((p0.getX() + p1.getX()) / l) % 2);
-        double yhits = (Math.floor((p0.getY() + p1.getY()) / w) % 2);
+        double xhits = (Math.floor((Math.abs(p1.getX())) / l) % 2);
+        double yhits = (Math.floor((Math.abs(p1.getY())) / w) % 2);
+
+
         if (v0.getX() < 0) {
+            xdist = (Math.abs(p1.getX())) % l;
             if (xhits == 0) {
-                pxnew = l - p2x;
+                pxnew = xdist;
             }
             else {
-                pxnew = p2x;
+                pxnew = l - xdist;
             }
         }
         else {
+            xdist = (Math.abs(p1.getX()) - p0.getX()) % l;
             if (xhits == 0) {
-                pxnew = p2x;
+                pxnew = l - xdist;
             }
             else {
-                pxnew = l - p2x;
+                pxnew = xdist;
             }
         }
         if (v0.getY() < 0) {
+            ydist = (Math.abs(p1.getY())) % w;
             if (yhits == 0) {
-                pynew = w - p2y;
+                pynew = ydist;
             }
             else {
-                pynew = p2y;
+                pynew = w - ydist;
             }
         }
         else {
+            ydist = (Math.abs(p1.getY()) - p0.getY()) % w;
             if (yhits == 0) {
-                pynew = p2y;
+                pynew = w - ydist;
             }
             else {
-                pynew = w - p2y;
+                pynew = ydist;
             }
         }
         V2 p_After_Step = new V2(pxnew, pynew);
